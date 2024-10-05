@@ -1,0 +1,321 @@
+html {
+  font-family: "Afacad Flux", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  text-align: center;
+  font-weight: 700;
+  color: #cbb8e0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.container {
+  width: 70%;
+}
+
+#hero-image {
+  width: 100%;
+}
+
+/* Biography section */
+
+.biography-paragraphs-wrapper {
+  margin-top: 50px;
+}
+
+.biography-paragraph {
+  text-align: center;
+}
+
+/* Softwares section */
+
+.softwares-section {
+  margin: 100px 0;
+}
+
+.software-icons-container {
+  margin-top: 66px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.software-icon-div {
+  margin: 0 50px;
+}
+
+.software-icon {
+  height: 75px;
+}
+
+/* Logofolio section */
+
+.logofolio-container {
+  margin-top: 50px;
+}
+
+.logofolio-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.logo-image {
+  height: 300px;
+  filter: grayscale(100%);
+  transition: filter 0.5s ease-in;
+  transition: scale 0.25s ease-in;
+}
+
+.logo-image:hover {
+  filter: grayscale(0%);
+  scale: 103%;
+}
+
+/* Branding section */
+
+.brand-container {
+  margin-top: 66px;
+}
+
+.brand-row {
+  margin: 15px 0px;
+}
+
+.brand-image {
+  width: 100%;
+  transition: filter 0.25s ease-in;
+  filter: grayscale(100%);
+}
+
+.brand-image:hover {
+  filter: grayscale(0%);
+}
+
+/* Photography section */
+
+.photo-section {
+  margin-top: 100px;
+}
+
+.photo-container {
+  margin-top: 66px;
+}
+
+.photo-section {
+  width: 100%;
+}
+
+.photo-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.photo-column {
+  width: 25%;
+  margin: 5px;
+}
+
+.photography {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  transition: filter 0.25s ease-in;
+  transition: scale 0.25s ease-in;
+}
+
+.photography:hover {
+  filter: grayscale(0);
+  scale: 101%;
+}
+
+/* Footer */
+
+.footer-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  color: white;
+  padding: 50px 0px;
+  margin-top: 20px;
+  background-color: #cbb8e0;
+}
+
+#contact-header {
+  display: block;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.contact-column {
+  margin: 0 20px;
+}
+
+.contact-text {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.bi {
+  background-color: white;
+  color: #cbb8e0;
+  padding: 10px;
+
+  overflow: visible;
+  border-radius: 50%;
+}
+
+
+/* Responsive ? */
+
+@media only screen and (max-width: 1024px) {
+
+  .software-icon-div {
+    margin: 0 25px;
+  }
+
+  .logo-image {
+    height: 200px;
+  }
+
+  .softwares-section {
+    margin: 50px 0;
+  }
+
+  .photo-section {
+    margin-top: 50px;
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+  .photo-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .photo-section {
+    margin-top: 50px;
+  }
+
+  .photo-row {
+    flex-wrap: wrap;
+  }
+
+  .photo-column {
+    width: 45%;
+    height: auto;
+    margin: 5px;
+  }
+
+  .brand-section {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .biography-paragraphs-wrapper {
+    margin-top: 25px;
+  }
+
+  .brand-container {
+    margin-top: 25px;
+  }
+
+  .photo-container {
+    margin-top: 25px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #contact-header {
+    text-align: center;
+    display: block;
+  }
+
+  .softwares-section {
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+
+  .software-icons-container {
+    margin-top: 25px;
+  }
+
+  .software-icon-div {
+    margin: 0 5px;
+  }
+
+  .software-icon {
+    height: 50px;
+  }
+
+  .logofolio-section {
+    margin-top: 50px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+  }
+
+  .logofolio-container {
+    margin-top: 25px;
+  }
+
+  .logo-image {
+    height: 115px;
+  }
+
+  .bi {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+
+  .software-icon-div {
+    margin: 0 5px;
+  }
+
+  .software-icon {
+    height: 35px;
+  }
+
+  .logo-image {
+    height: 75px;
+  }
+
+}
